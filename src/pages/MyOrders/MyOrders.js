@@ -41,7 +41,7 @@ const MyOrders = () => {
             <h3 className="m-5">Service ID: {service._id}</h3>
                 <p><big>Description</big> : {service.about}</p>
                 <br />
-                <p><span className="text-danger">Note:</span> To confirm copy paste order <span className="text-danger">ID</span> from top of this page in the box below</p>
+                <p><span className="text-danger">Note:</span> To confirm copy paste order <span className="text-danger">ID</span> from top of this page in the box below.</p>
 
          <form onSubmit={handleSubmit(onSubmit)}>
             <input {...register("name", { required: true, maxLength: 20 } )} defaultValue={user ? user.displayName : ''} className="m-2"/>
