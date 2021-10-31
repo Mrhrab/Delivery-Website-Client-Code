@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ManageOrder = () => {
     // const [orders, setOrders] = useState({});
     // useEffect(()=>{
-    //     fetch('http://localhost:5000/orders')
+    //     fetch('https://howling-dungeon-90512.herokuapp.com/orders')
     //     .then(res=> res.json())
     //     .then(data => setOrders(data))
     // }, [])

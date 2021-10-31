@@ -9,7 +9,7 @@ const AddService = () => {
   const onSubmit = data =>{ 
       console.log(data);
       
-      axios.post('http://localhost:5000/products', data)
+      axios.post('https://howling-dungeon-90512.herokuapp.com/products', data)
       .then(result =>{
           if(result.insertedId){
              alert('order processed Successfully')

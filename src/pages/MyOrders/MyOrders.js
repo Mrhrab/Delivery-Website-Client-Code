@@ -13,7 +13,7 @@ const MyOrders = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data =>{ 
         console.log(data);
-     fetch('http://localhost:5000/orders', {
+     fetch('https://howling-dungeon-90512.herokuapp.com/orders', {
         method: 'POST',
         headers:{
             'content-type':'application/json'
@@ -31,7 +31,7 @@ const MyOrders = () => {
 
   
     useEffect(()=>{
-        fetch( `http://localhost:5000/products/${serveKey}`)
+        fetch( `https://howling-dungeon-90512.herokuapp.com/${serveKey}`)
         .then(res=> res.json())
         .then(data => setService(data));
     },[])
